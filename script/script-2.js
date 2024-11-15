@@ -14,3 +14,7 @@ function swiperPick__init() {
 	});
 }
 swiperPick__init();
+
+$('.tap ul li.detail').click(function() {
+    $('.grid_item_box.show').show();
+})

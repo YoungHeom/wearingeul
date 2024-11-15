@@ -124,12 +124,12 @@
                 </div>
             </div>
         </section>
-        <section class="tap">
+        <section class="tap" id="tap">
             <div class="tap_inner">
                 <ul>
-                    <li class="detail"><a href="#">상세정보</a></li>
-                    <li class="review"><a href="#qna">리뷰</a></li>
-                    <li class="qna"><a href="#">Q&A</a></li>
+                    <li class="detail"><a href="#tap">상세정보</a></li>
+                    <li class="review"><a href="#review">리뷰</a></li>
+                    <li class="qna"><a href="#qna">Q&A</a></li>
                 </ul>
             </div>
         </section>
@@ -137,9 +137,10 @@
             <div class="detail_inner">
                 <div class="img_box">
                     <img src="img/상세페이지하네되.png" alt="">
-                </div>
-                <div class="btn_box">
-                    <button>상세정보 더 보기</button>
+                    <div class="btn_box">
+                        <button class="detail_btn">상세정보 더 보기<img src="img/arrow-down.svg" alt=""></button>
+                        <div class="btn_bg"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -182,7 +183,7 @@
                             </div>
                             <div class="txt_box">
                                 <a href="#">
-                                    웬디 달링 (피터와 웬디) 잉크 30ml
+                                    글입다 한 방울 잉크 컬러스와치 링 타입
                                     <div class="right"><span>23,000</span>20,000 원</div>
                                 </a>
                             </div>
@@ -195,7 +196,7 @@
                             </div>
                             <div class="txt_box">
                                 <a href="#">
-                                    웬디 달링 (피터와 웬디) 잉크 30ml
+                                    [단품] 한국문학 북퍼퓸 10종
                                     <div class="right"><span>23,000</span>20,000 원</div>
                                 </a>
                             </div>
@@ -296,7 +297,7 @@
                             <div class="profile_box">
                                 <div class="profile"><img src="img/profile-1.png" alt=""></div>
                                 <div>
-                                    <div class="txt_box">프친자 | 2024.06.04</div>
+                                    <div class="txt_box"><span class="name">프친자</span> | 2024.06.04</div>
                                     <div class="star">
                                         <img src="img/star.svg" alt="">
                                         <img src="img/star.svg" alt="">
@@ -310,7 +311,7 @@
                             <div>
                                 <div class="txt_box">
                                     <div class="img_box"><img src="img/review-2.png" alt=""></div>
-                                    <div>
+                                    <div class="txt_body">
                                         체스판 같은 디자인이 예뻐서 바로 질렀어요! 이걸로 글씨 쓰면 조만간 로판에 빙의 가능할 것 같아요.
                                         <br>
                                         패키징도 넘 고급스러워서 마음에 들어요. 안 쓸 때 책상에 예쁘게 정리해놓으면 삭막한 현대인의 책상이 로판 응접실로 변하는st. 뭔지 아시죠?
@@ -321,7 +322,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="review"></div>
                 </div>
                 <div class="review_review_box">
                     <div class="review_inner">
@@ -329,7 +329,7 @@
                             <div class="profile_box">
                                 <div class="profile"><img src="img/profile-2.png" alt=""></div>
                                 <div>
-                                    <div>김만족 | 2024.06.04</div>
+                                    <div class="txt_box"><span class="name">김만족</span> | 2024.05.24</div>
                                     <div class="star">
                                         <img src="img/star.svg" alt="">
                                         <img src="img/star.svg" alt="">
@@ -342,12 +342,11 @@
 
                             <div>
                                 <div class="txt_box">
-                                    <div>무게감, 필기감 모두 만족스러워요. 메데이아 버전도 구매하고 싶어요!</div>
+                                    <div class="txt_body">무게감, 필기감 모두 만족스러워요. 메데이아 버전도 구매하고 싶어요!</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="review"></div>
                 </div>
                 <div class="review_review_box">
                     <div class="review_inner">
@@ -355,7 +354,7 @@
                             <div class="profile_box">
                                 <div class="profile"><img src="img/profile-3.png" alt=""></div>
                                 <div>
-                                    <div>소장각 | 2024.06.04</div>
+                                    <div class="txt_box"><span class="name">소장각</span> | 2024.05.16</div>
                                     <div class="star">
                                         <img src="img/star.svg" alt="">
                                         <img src="img/star.svg" alt="">
@@ -369,29 +368,94 @@
                             <div>
                                 <div class="txt_box">
                                     <div class="img_box"><img src="img/review-1.png" alt=""></div>
-                                    <div>
-                                        체스판 같은 디자인이 예뻐서 바로 질렀어요! 이걸로 글씨 쓰면 조만간 로판에 빙의 가능할 것 같아요.
-                                        <br>
-                                        패키징도 넘 고급스러워서 마음에 들어요. 안 쓸 때 책상에 예쁘게 정리해놓으면 삭막한 현대인의 책상이 로판 응접실로 변하는st. 뭔지 아시죠?
-                                        <br>
-                                        고민은 배송만 늦출 뿐. 당장 갈기세요
+                                    <div class="txt_body">
+                                        하네되 찐팬인 친구한테 선물하려고 구매했어요. 패키지 보니 저도 하나 소장하고 싶네요.
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="review"></div>
                 </div>
             </div>
         </section>
         <section id="qna">
-            <div class="inner">
-                <h2>Q&A</h2>
-                <div></div>
+            <div class="qna_inner">
+                <div class="qna_title">
+                    <h2>Q&A</h2>
+                    <div class="grow"></div>
+                    <button class="qna_btn">상품 문의하기</button>
+                </div>
+                <div class="qna_body">
+                    <div>
+                        <div class="title">재입고 언제 되나요?</div>
+                        <div class="grow"></div>
+                        <div>김*랑</div>
+                        <div>2024.09.10</div>
+                        <div class="answer">답변 대기</div>
+                    </div>
+                    <div>
+                        <div class="title">비공개 글입니다<img src="img/lock.svg" alt=""></div>
+                        <div class="grow"></div>
+                        <div>이*혜</div>
+                        <div>2024.08.10</div>
+                        <div class="answer">답변 완료</div>
+                    </div>
+                    <div>
+                        <div class="title">닙 관리 방법이 따로 있을까요?</div>
+                        <div class="grow"></div>
+                        <div>이*영</div>
+                        <div>2024.05.10</div>
+                        <div class="answer">답변 완료</div>
+                    </div>
 
+                </div>
             </div>
 
         </section>
+
+        <footer>
+            <div class="footer_con">
+                <div class="ft_logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+
+                <div class="ft_contents">
+                    <div class="ft_contents1">
+                        <div class="ft_menu">
+                            <ul>
+                                <li>대표자: 안동혁</li>
+                                <li>이메일: ceo@abledesignent.com</li>
+                            </ul>
+                            <div>사업자등록번호: 365-00-00000</div>
+                            <div>통신판매신고번호: 2020-대전서구-1234</div>
+                            <div>경기도 고양시 일산동구 중앙로1261번길 77 메트로폴리스 301호 </div>
+                        </div>
+                    </div>
+
+                    <div class="grow"></div>
+
+                    <div class="ft_contents2">
+                        <div>고객센터</div>
+                        <h2>1234-5678</h2>
+                        <div class="time">
+                            <span>월~금 9:00 ~ 18:00</span>
+                            <span>점심시간 12:00 ~ 13:00</span>
+                            <span>토/일/공휴일 휴무</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft_contents3">
+                    <div>
+                        <a href="#"><span>브랜드소개</span></a>
+                        <a href="#"><span>정보공시</span></a>
+                        <a href="#"><span>이용약관</span></a>
+                        <a href="#"><span>개인정보처리방침</span></a>
+                    </div>
+                    <div class="grow"></div>
+                    <div>ⓒ 2024 Wearingeul 글입다 All rights reserved.</div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!-- 탑 스크롤 버튼 2개 ------------------>
