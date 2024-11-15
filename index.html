@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글입다</title>
-    <link rel="stylesheet" as="style" crossorigin
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <link rel="stylesheet" href="css/style-1.css">
 
     <!-- 제이쿼리, 이징 라이브러리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
 
     <!-- 폰트어썸 라이브러리 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -19,6 +21,9 @@
     <!-- 스와이퍼 라이브러리 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style-1.css">
+
 
 </head>
 
@@ -29,7 +34,7 @@
             <nav class="top_bar">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/logo.png" alt="로고">
+                        <img src="img/logo.svg" alt="로고">
                     </a>
                 </div>
                 <div class="menu">
@@ -50,57 +55,440 @@
                             <a href="#">디지털</a>
                         </li>
                         <li>
-                            <a href="#">리빙/라이프</a>
-                        </li>
-                        <!-- <li>
                             <a href="#">공지사항</a>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
                 <div class="grow"></div>
+                <div class="search">
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <div class="icon_box">
+                        <img src="img/search.svg" alt="">
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">로그인</a>
+                        </li>
+                        <li>
+                            <a href="#">장바구니</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
+
         <section class="swiper main_banner">
             <div class="swiper-wrapper main_wrapper">
                 <div class="swiper-slide">
-                    <img src="img/메인배너-1-2.png" alt="">
+                    <a href="#">
+                        <button class="bn_btn">구매하기</button>
+                        <img src="img/메인배너-1-2.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide banner_2">
+                    <a href="#">
+                        <button class="bn_btn">피터팬 시리즈 보러 가기</button>
+                        <img src="img/메인배너-2.png" alt="">
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/메인배너-1-2.png" alt="">
+                    <a href="#">
+                        <button class="bn_btn">구매하기</button>
+                        <img src="img/메인배너-1-2.png" alt="">
+                    </a>
                 </div>
-                <div class="swiper-slide">
-                    <img src="img/메인배너-1-2.png" alt="">
+                <div class="swiper-slide banner_2">
+                    <a href="#">
+                        <button class="bn_btn">피터팬 시리즈 보러 가기</button>
+                        <img src="img/메인배너-2.png" alt="">
+                    </a>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
         </section>
+
         <section class="new">
-            <div class="inner">
-                <div class="new_title">신상품</div>
-                <div class="new_pd"> <!-- flex -->
-                    <div class="img_box">
-                        <img src="" alt="">
+            <div class="swiper new_swiper">
+                <div class="new_title">
+                    <div class="txt_box">
+                        <h2>신상품</h3>
+                            <div>글입다 시그니처 문학 시리즈 신상품</div>
                     </div>
-                    <div class="">
-                        <div class="txt_box">
-                            한국 문학 시리즈&
-                            <div>
-                                세계 문학 시리즈
-                            </div>
+                </div>
+                <div class="swiper-wrapper new_wrapper">
+                    <div class="swiper-slide new_slide">
+                        <div class="new_img_box">
+                            <img src="img/pd-1.png" alt="">
                         </div>
                         <div>
-                            <div class="img_box"><img src="" alt=""></div>
-                            <div class="img_box"><img src="" alt=""></div>
+                            <div class="txt_box">
+                                <div>
+                                    한국 문학 시리즈 &
+                                </div>
+                                <div>세계 문학 시리즈</div>
+                            </div>
+                            <div class="img_box">
+                                <div>
+                                    <img src="img/pd-2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/pd-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide new_slide">
+                        <div class="new_img_box">
+                            <img src="img/pd-11.png" alt="">
+                        </div>
+                        <div>
+                            <div class="txt_box">
+                                <div>
+                                    한국 문학 시리즈 &
+                                </div>
+                                <div>세계 문학 시리즈</div>
+                            </div>
+                            <div class="img_box">
+                                <div>
+                                    <img src="img/pd-10.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/pd-14.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        <!-- 추천상품 스와이퍼 시작 -->
+        <section class="pick">
+            <div class="swiper pick_swiper">
+                <div class="pick_title">
+                    <div class="txt_box">
+                        <h2>추천상품</h2>
+                        <div>만년필 입문자에게 추천하는 베스트 아이템</div>
+                    </div>
+                    <div class="grow"></div>
+                    <div class="swiper_button_box">
+                        <div class="swiper-button-next">
+                            <img src="img/navigation_btn.svg" alt="">
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img src="img/navigation_btn.svg" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="swiper-wrapper pick_wrapper">
+                    <div class="swiper-slide pick_slide">
+                        <div>
+                            <a href="sub-product.html">
+                                <div class="img_box">
+                                    <img src="img/pd-1.png" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    Wearingeul 글입다 문학 잉크 모음
+                                    <div class="right"><span>23,000 원</span>20,000 원</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/pd-16.png" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    글입다 모비딕 (허먼 멜빌) 잉크 30ml
+                                    <div class="right"><span>23,000 원</span>20,000 원</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/pd-6.png" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    노빌레 노트 Nobile note A5 - Blank
+                                    <div class="right"><span>10,000 원</span>5,000 원</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/pd-7.png" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    글입다 지구에서 달까지(쥘 베른) 잉크 30ml
+                                    <div class="right"><span>23,000 원</span>20,000 원</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide pick_slide">
+                        <div>
+                            <a href="sub-product.html">
+                                <div class="img_box">
+                                    <img src="img/pd-1.png" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <div>
+                                        Wearingeul 글입다 문학 잉크 모음
+                                        <div class="right"><span>23,000 원</span>20,000 원</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/pd-16.png" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    독서기록장, 독중감 - 스프링 그린
+                                    <div class="right"><span>10,000 원</span>5,000 원</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="img/pd-16.png" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    웬디 달링 (피터와 웬디) 잉크 30ml
+                                    <div class="right"><span>23,000 원</span>20,000 원</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="https://cdn-optimized.imweb.me/upload/S201904175cb6a3e9e9ca9/a33a2e51a26b9.jpg"
+                                        alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <div>
+                                        글입다 지구에서 달까지(쥘 베른) 잉크 30ml
+                                        <div class="right"><span>23,000 원</span>20,000 원</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </section>
-        <section class="pick">
-            <div class="swiper"></div>
+        <!-- 추천상품 스와이퍼 끝 -->
+        <section class="event_banner">
+            <div class="ev_inner">
+                <div class="banner_box">
+                    <div class="img_box"><img src="img/이벤트배너1.svg" alt=""></div>
+                    <div class="img_box"><img src="img/이벤트배너2.svg" alt=""></div>
+                </div>
+            </div>
         </section>
-        <section class="event_banner"></section>
-        <section class="best"></section>
+
+        <div class="best">
+            <div class="best_inner">
+                <div class="best_title">
+                    <div class="txt_box">
+                        <h2>베스트 상품</h3>
+                            <div>글입다 이 달의 베스트 아이템</div>
+                    </div>
+                </div>
+                <div class="best_grid_box">
+                    <div class="grid_item_box">
+                        <a href="#">
+                            <img src="img/pd-5.png" alt="">
+                            <div class="txt_box">
+                                글입다 지구에서 달까지(쥘 베른) 잉크 30ml
+                                <div class="right"><span>23,000 원</span>20,000 원</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box">
+                        <a href="#">
+                            <img src="img/pd-8.png" alt="">
+                            <div class="txt_box">
+                                앨리스 (이상한 나라의 앨리스) 잉크 30ml
+                                <div class="right"><span>23,000 원</span>20,000 원</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box">
+                        <a href="#">
+                            <img src="img/pd-7.png" alt="">
+                            <div class="txt_box">
+                                글입다 한 방울 잉크 컬러스와치 링 타입
+                                <div class="right">10,000 원</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box">
+                        <a href="#">
+                            <img src="img/pd-15.png" alt="">
+                            <div class="txt_box">
+                                독서기록장, 독중감 - 스프링 그린
+                                <div class="right"><span>10,000 원</span>5,000 원</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box">
+                        <a href="#">
+                            <img src="img/pd-10.png" alt="">
+                            <div>
+                                <div class="txt_box">
+                                    로미오와 줄리엣 북퍼퓸
+                                    <div class="right">20,000 원</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box">
+                        <a href="#">
+                            <img src="img/pd-11.png" alt="">
+                            <div class="txt_box">
+                                [단품] 한국문학 북퍼퓸 10종
+                                <div class="right">20,000 원</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box">
+                        <a href="#">
+                            <img src="img/pd-17.png" alt="">
+                            <div class="txt_box">
+                                제미나(Zemyna) 세계 신화 잉크 30ml
+                                <div class="right"><span>23,000 원</span>20,000 원</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box">
+                        <a href="sub-product.html">
+                            <img src="img/review-3.png" alt="">
+                            <div class="txt_box">
+                                프시케 폴리 깃펜 펜레스트 세트
+                                <div class="right">30,000 원</div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+
+                    <div class="grid_item_box show">
+                        <a href="#">
+                            <img src="img/pd-5.png" alt="">
+                            <div>
+                                <div class="txt_box">
+                                    <div>
+                                        글입다 지구에서 달까지(쥘 베른) 잉크 30ml
+                                        <div class="right"><span>23,000 원</span>20,000 원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box show">
+                        <a href="#">
+                            <img src="img/pd-8.png" alt="">
+                            <div class="txt_box">
+                                <div>
+                                    앨리스 (이상한 나라의 앨리스) 잉크 30ml
+                                    <div class="right"><span>23,000 원</span>20,000 원</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box show">
+                        <a href="#">
+                            <img src="img/pd-7.png" alt="">
+                            <div class="txt_box">
+                                <div>
+                                    글입다 한 방울 잉크 컬러스와치 링 타입
+                                    <div class="right">10,000 원</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box show">
+                        <a href="#">
+                            <img src="img/pd-15.png" alt="">
+                            <div class="txt_box">
+                                <div>
+                                    독서기록장, 독중감 - 스프링 그린
+                                    <div class="right"><span>10,000 원</span>5,000 원</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box show">
+                        <a href="#">
+                            <img src="img/pd-10.png" alt="">
+                            <div>
+                                <div class="txt_box">
+                                    <div>
+                                        로미오와 줄리엣 북퍼퓸
+                                        <div class="right">20,000 원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box show">
+                        <a href="#">
+                            <img src="img/pd-11.png" alt="">
+                            <div class="txt_box">
+                                <div>
+                                    [단품] 한국문학 북퍼퓸 10종
+                                    <div class="right">20,000 원</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box show">
+                        <a href="#">
+                            <img src="img/pd-17.png" alt="">
+                            <div class="txt_box">
+                                <div>
+                                    제미나(Zemyna) 세계 신화 잉크 30ml
+                                    <div class="right"><span>23,000 원</span>20,000 원</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid_item_box show">
+                        <a href="sub-product.html">
+                            <img src="img/review-3.png" alt="">
+                            <div class="txt_box">
+                                <div>
+                                    프시케 폴리 깃펜 펜레스트 세트
+                                    <div class="right">30,000 원</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <button class="best_btn">더 보기 +</button>
+            </div>
+        </div>
 
         <!-- <section class="swiper main_banner">
 
@@ -117,41 +505,49 @@
             </ul>
         </section> -->
 
-        <!-- <footer>
+        <footer>
             <div class="footer_con">
                 <div class="ft_logo">
-                    <img src="img/logo.png" alt="">
+                    <img src="img/logo.svg" alt="">
                 </div>
 
                 <div class="ft_contents">
                     <div class="ft_contents1">
                         <div class="ft_menu">
                             <ul>
-                                <li><a href="#">회사소개</a></li>
-                                <li><a href="sub-support.html">고객지원</a></li>
-                                <li><a href="#">이용약관</a></li>
-                                <li><a href="#">개인정보취급방침</a></li>
-                                <li><a href="#">사이트맵</a></li>
+                                <li>대표자: 안동혁</li>
+                                <li>이메일: ceo@abledesignent.com</li>
                             </ul>
+                            <div>사업자등록번호: 365-00-00000</div>
+                            <div>통신판매신고번호: 2020-대전서구-1234</div>
+                            <div>경기도 고양시 일산동구 중앙로1261번길 77 메트로폴리스 301호 </div>
                         </div>
-                        <span>사업장주소 : 서울특별시 영등포구 국제금융로 10 원아이에프씨 24F</span>
-                        <span>COPYRIGHT © 2024 SONY KOREA CORPORATION. ALL RIGHTS RESERVED.</span>
                     </div>
 
                     <div class="grow"></div>
 
                     <div class="ft_contents2">
-                        <span>TEL : 소니코리아 고객지원센터 1588-0911</span>
-                        <span>E-MAIL : cshelp@sony.co.kr</span>
-                        <div class="ft_sns">
-                            <a href="#"><img src="img/SNS_instagram.png" alt=""></a>
-                            <a href="#"><img src="img/SNS_X.png" alt=""></a>
-                            <a href="#"><img src="img/SNS_youtube.png" alt=""></a>
+                        <div>고객센터</div>
+                        <h2>1234-5678</h2>
+                        <div class="time">
+                            <span>월~금 9:00 ~ 18:00</span>
+                            <span>점심시간 12:00 ~ 13:00</span>
+                            <span>토/일/공휴일 휴무</span>
                         </div>
                     </div>
                 </div>
+                <div class="ft_contents3">
+                    <div>
+                        <a href="#"><span>브랜드소개</span></a>
+                        <a href="#"><span>정보공시</span></a>
+                        <a href="#"><span>이용약관</span></a>
+                        <a href="#"><span>개인정보처리방침</span></a>
+                    </div>
+                    <div class="grow"></div>
+                    <div>ⓒ 2024 Wearingeul 글입다 All rights reserved.</div>
+                </div>
             </div>
-        </footer> -->
+        </footer>
     </div>
 
 
