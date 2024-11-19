@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    // support_top 버튼 ---------------------------------------------------------------
+    // top 버튼 ---------------------------------------------------------------
     // 스크롤 위치에 따라 탑버튼 표시
     $(window).scroll(function () {
 
@@ -18,17 +18,17 @@ $(document).ready(function () {
         }, 200)
     });
 
-    // 페이지 하단에서 100픽셀 이내에 도달했을 때 하얀 버튼 표시
-    $(window).scroll(function () {
+    // // 페이지 하단에서 100픽셀 이내에 도달했을 때 하얀 버튼 표시
+    // $(window).scroll(function () {
 
-        if ($(this).scrollTop() + $(window).height() >= $(document).height() - 100) {
-            $('.top_btn_white').addClass('show');
-            $('.top_btn').hide();
-        } else {
-            $('.top_btn_white').removeClass('show');
-            $('.top_btn').show();
-        }
-    });
+    //     if ($(this).scrollTop() + $(window).height() >= $(document).height() - 100) {
+    //         $('.top_btn_white').addClass('show');
+    //         $('.top_btn').hide();
+    //     } else {
+    //         $('.top_btn_white').removeClass('show');
+    //         $('.top_btn').show();
+    //     }
+    // });
 
 
 
@@ -48,6 +48,8 @@ $(document).ready(function () {
         //     prevEl: ".banner_prev"
         // }
     });
+
+
 });
 
 // pick_swiper 추천상품 이미지 스와이퍼 슬라이드 --------------------------------------------------------

@@ -631,8 +631,9 @@ footer {
 }
 
 .top_btn>.btn_icon_box {
-    width: 18px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
+    filter: opacity(0.7);
 }
 
 .top_btn>.btn_icon_box>img {
@@ -647,38 +648,6 @@ footer {
 /* top_btn 끝 */
 
 
-/* top_btn_white 시작 */
-.top_btn_white {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    background-color: #EEE6DD;
-    border-radius: 100px;
-    position: fixed;
-    bottom: -10%;
-    left: 92%;
-    cursor: pointer;
-    box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.5);
-    z-index: 200;
-}
-
-.top_btn_white>.btn_icon_box {
-    width: 18px;
-    height: 26px;
-}
-
-.top_btn_white>.btn_icon_box>img {
-    width: 100%;
-}
-
-.top_btn_white.show {
-    bottom: 80px;
-    left: 92%;
-}
-
-/* top_btn_white 끝 */
 
 @media (min-width: 1440px) {
     .main_banner {
