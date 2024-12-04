@@ -375,11 +375,13 @@ header.scroll {
 	font-weight: 500;
     margin-top: 12px;
     padding: 0px 2px;
+    font-size: clamp(14px, 1.2vw, 16px);
 }
 .pick_slide .txt_box .right {
 	text-align: end;
 	margin-top: 10px;
 	font-weight: 700;
+    font-size: clamp(15px, 1.2vw, 16px);
 }
 .pick_slide .txt_box .right span {
 	margin-right: 8px;
@@ -459,8 +461,8 @@ header.scroll {
 	width: 100%;
 }
 .grid_item_box > a > div {
-    font-size: 16px;
-	/* font-size: clamp(14px, 1.2vw, 16px); */
+    /* font-size: 16px; */
+	font-size: clamp(14px, 1.2vw, 16px);
 }
 .grid_item_box .txt_box {
 	font-weight: 500;
@@ -471,6 +473,7 @@ header.scroll {
 	text-align: end;
 	margin-top: 10px;
 	font-weight: 700;
+    font-size: clamp(15px, 1.2vw, 16px);
 }
 .grid_item_box .txt_box .right span {
 	margin-right: 8px;
@@ -632,7 +635,7 @@ footer {
     bottom: -10%;
     left: 92%;
     cursor: pointer;
-    box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.2);
     z-index: 100;
     transition: bottom 1s;
 }
