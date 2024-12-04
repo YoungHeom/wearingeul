@@ -230,8 +230,11 @@ header.scroll {
 .new_slide > .new_img_box {
     width: 712px;
     height: 712px;
+}.new_slide > .new_img_box a {
+    width: 100%;
+    height: 100%;
 }
-.new_slide > .new_img_box > img {
+.new_slide > .new_img_box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -269,7 +272,11 @@ header.scroll {
     width: 348px;
     height: 348px;
 }
-.new_slide > div:last-child > .img_box div > img{
+.new_slide > div:last-child > .img_box div a{
+    width: 100%;
+    height: 100%;
+}
+.new_slide > div:last-child > .img_box div a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -686,11 +693,6 @@ footer {
         width: 712px;
         height: 612px;
     }
-    .new_slide > .new_img_box > img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
     .new_slide > div:last-child {
         width: 48%;
         display: flex;
@@ -705,23 +707,9 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    .new_slide > div:last-child > .txt_box > div:first-child {
-        margin-right: 130px;
-    }
-    .new_slide > div:last-child > .txt_box > div:last-child {
-        margin-left: 150px;
-    }
     .new_slide > div:last-child > .img_box div {
-        width: 348px;
         height: 298px;
     }
-    .new_slide > div:last-child > .img_box div > img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
 
 
 

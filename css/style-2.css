@@ -473,12 +473,12 @@ input::-webkit-inner-spin-button {
 #review > .inner > .review_title div > span {
     color: #999999;
 }
-#review > .inner > .review_title div > span:first-child {
+#review > .inner > .review_title div > .pick_list {
     padding-right: 10px;
     border-right: 1px solid #e2e2e2;
     cursor: pointer;
 }
-#review > .inner > .review_title div > span:last-child {
+#review > .inner > .review_title div > .new_list {
     padding-left: 8px;
     cursor: pointer;
 }
@@ -514,6 +514,7 @@ input::-webkit-inner-spin-button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 .review_review_box:not(:last-child) {
     margin-bottom: 32px;
